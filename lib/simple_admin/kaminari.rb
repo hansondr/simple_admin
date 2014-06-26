@@ -2,6 +2,8 @@
 # is passed in. Now the route is matched on params[:controller] and params[:action] and
 # finds the first matching route. Before it would use the current request.path. This
 # replaces that behavior only for admin
+require 'kaminari'
+
 module Kaminari
   module Helpers
     class Tag
